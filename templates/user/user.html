@@ -1,0 +1,19 @@
+{{define "user/user.html"}}
+<html>
+    <h1>Welcome {{.name}}</h1>
+    <h2>Your Users</h2>
+    <div>
+        {{range.data}}
+            <div>
+                <p>
+                    Name:{{.Name}}
+                </p>
+                <p>
+                    Title:{{.Title}}
+                </p>
+            </div>
+            <hr>
+         {{end}}
+    </div>
+</html>
+{{end}}
